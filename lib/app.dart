@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:qoutes/config/themes/app_theme.dart';
+import 'package:qoutes/core/utils/app_colors.dart';
 import 'package:qoutes/features/random_qoute/presentation/screens/qoute_screen.dart';
 
 class QouteApp extends StatelessWidget {
@@ -8,7 +10,7 @@ class QouteApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(),
+      theme: appTheme(),
       home: QouteScreen(),
     );
   }
